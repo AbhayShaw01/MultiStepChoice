@@ -10,7 +10,7 @@ export default function MathList({ data }: MathListProps) {
   const [isActive, setShowIsActive] = useState<number | null>(null);
 
   return (
-    <div className="h-[550px] space-y-8 sm:h-[400px]">
+    <div className="h-[525px] space-y-8 sm:h-[400px]">
       <h1 className="text-center text-xl sm:text-2xl font-semibold pt-4 my-0 sm:my-4">
         What is your math comfort level?
       </h1>
