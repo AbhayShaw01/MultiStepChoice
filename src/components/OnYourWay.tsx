@@ -8,7 +8,7 @@ export default function OnYourWay({ data }: OnYourWayProps) {
   return (
     <div className="grid grid-row sm:grid-cols-3 sm:mt-0 mt-10 h-[450px] pt-0 sm:pt-20 pb-10 ">
       <div className="col-span-1 flex justify-center items-center">
-        <div>
+        <div className='translate-x-24'>
           <img src="/assets/pulley.jpg" alt="pulley" className="sm:max-w-[200px] w-full" />
         </div>
       </div>
