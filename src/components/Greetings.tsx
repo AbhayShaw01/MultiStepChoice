@@ -7,7 +7,7 @@ export default function Greetings({greetData}:GreetingListProps) {
   return (
     <div className="grid grid-row sm:grid-cols-3 px-6   h-[500px]  pt-2 sm:pt-20 pb-10 ">
     
-      <div className="col-span-1   content-center translate-x-20  ">
+      <div className="col-span-1   content-center translate-x-20 sm:translate-x-0 ">
         <img src="/assets/monster.jpg" alt="monster-greet"  />
       </div>
     
