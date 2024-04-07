@@ -18,7 +18,7 @@ export default function MathList({ data }: MathListProps) {
         Choose the highest level you feel confident in — you can always adjust
         later.
       </p>
-      <ul className="flex flex-wrap sm:flex-nowrap py-2 mt-2 sm:mt-10 justify-center gap-3">
+      <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 justify-center mt-2 sm:mt-10">
         {data.map((item, index) => (
           <li
             key={index}
@@ -27,15 +27,16 @@ export default function MathList({ data }: MathListProps) {
               isActive === index
                 ? "border-yellow-500 cursor-pointer border-3"
                 : "hover:border-yellow-500 hover:cursor-pointer hover:border-3"
-            } sm:w-1/2 rounded-xl text-center flex-col sm:py-2 px-3 border hover:border-yellow-500`}
+            } rounded-xl text-center flex flex-col py-2 px-3 border hover:border-yellow-500`}
+           
           >
             <img
               src={item.image}
               alt="math-images"
-              className="sm:size-35 size-20 items-center mx-auto"
+              className="mx-auto mb-2 w-18 h-18 sm:w-40 sm:h-40"
             />
-            <p className="text-md">{item.content}</p>
-            <p className="text-lg font-semibold text-gray-500 pb-2">
+            <p className="text-md mb-2">{item.content}</p> {/* Add bottom margin */}
+            <p className="text-lg font-semibold text-gray-500">
               {item.category}
             </p>
           </li>
